@@ -1,0 +1,21 @@
+apply plugin: 'application'
+
+mainClassName = "com.mutant.test.Boot"
+
+group 'br.com.Mutant'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":web")
+    implementation project(":input-boundary")
+    implementation project(":usecase")
+    implementation project(":entity")
+}
+
+test {
+    useJUnitPlatform()
+}
