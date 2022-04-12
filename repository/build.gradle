@@ -10,9 +10,9 @@ repositories {
 }
 
 dependencies {
-    implementation project(":input-boundary")
     implementation project(":output-boundary")
-    implementation project(":entity")
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.4'
+    implementation 'com.h2database:h2:2.1.210'
 }
 
 test {

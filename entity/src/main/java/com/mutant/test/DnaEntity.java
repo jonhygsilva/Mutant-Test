@@ -5,11 +5,31 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class DnaEntity {
-
     private String[] dna;
+    private int mutant;
 
     public DnaEntity(String[] dna) {
         this.dna = dna;
+    }
+
+    public DnaEntity(int mutant) {
+        this.mutant = mutant;
+    }
+
+    public DnaEntity(String[] dna, int mutant) {
+        this.dna = dna;
+        this.mutant = mutant;
+    }
+
+    public DnaEntity() {
+    }
+
+    public int getMutant() {
+        return mutant;
+    }
+
+    public void setMutant(int mutant) {
+        this.mutant = mutant;
     }
 
     public String[] getDna() {
@@ -18,6 +38,14 @@ public class DnaEntity {
 
     public void setDna(String[] dna) {
         this.dna = dna;
+    }
+
+    public void analizeDna() {
+        if (isMutant()) {
+            setMutant(1);
+        } else {
+            setMutant(0);
+        }
     }
 
     public boolean isMutant() {
