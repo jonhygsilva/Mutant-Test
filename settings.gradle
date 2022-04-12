@@ -4,4 +4,6 @@ include 'application'
 include 'input-boundary'
 include 'usecase'
 include 'entity'
+include 'output-boundary'
+include 'repository'
 
