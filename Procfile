@@ -1,1 +1,1 @@
-./gradlew build && ./gradlew :application:bootRun
+web: ./gradlew build && ./gradlew :application:bootRun
