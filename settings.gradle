@@ -1,4 +1,4 @@
-rootProject.name = 'Mutant-Test'
+rootProject.name = 'mutant-test'
 include 'web'
 include 'application'
 include 'input-boundary'
