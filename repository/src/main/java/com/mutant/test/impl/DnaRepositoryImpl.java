@@ -39,7 +39,6 @@ public class DnaRepositoryImpl implements DnaOutputBoundary {
     @Override
     public List<GroupedDnaCode> getGroupedDNACode() {
         List<Object[]> result = dnaCrudRepository.getGroupedDNACode();
-//        List<Object[]> result = entityManager.createQuery(query).getResultList();
         return result.stream().map(it ->
                 new GroupedDnaCode(
                         (Number) it[0],

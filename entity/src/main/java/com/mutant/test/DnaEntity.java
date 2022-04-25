@@ -40,7 +40,7 @@ public class DnaEntity {
         this.dna = dna;
     }
 
-    public void analizeDna() {
+    public void analyzeDna() {
         if (isMutant()) {
             setMutant(1);
         } else {
@@ -234,3 +234,4 @@ public class DnaEntity {
         return isMutant;
     }
 }
+

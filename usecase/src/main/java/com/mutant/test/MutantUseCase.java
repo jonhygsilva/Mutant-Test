@@ -28,7 +28,7 @@ public class MutantUseCase implements MutantInputBoundary {
         }
 
         DnaEntity dnaEntity = new DnaEntity(dna);
-        dnaEntity.analizeDna();
+        dnaEntity.analyzeDna();
 
         dnaOutputBoundary.saveDna(new DnaDto(
                 Arrays.toString(dna),
